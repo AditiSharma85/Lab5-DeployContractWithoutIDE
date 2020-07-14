@@ -24,8 +24,8 @@ contract("BitWise", () =>{
     })
     
     it('countBitSetAsm(uint8 data) should pass', async () => {
-        data = 250;
-        const resultAsm = await bitwise.countBitSetAsm(data);
-        assert(resultAsm, 250, "result should match 250");
+        data = 0;
+        const resultAsm = await bitwise.countBitSetAsm(0);
+        assert(resultAsm, 0, "result should match 0");
     })
 }) 
